@@ -1,0 +1,14 @@
+@mixin hover($brightness: 115%) {
+    transition: .2s ease-in-out;
+
+    &:hover {
+        filter: brightness($brightness);
+    }
+}
+
+@mixin descriptionStyle() {
+    font-size: 13px;
+    color: $description-color;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, .3);
+    line-height: 1.769;
+}
